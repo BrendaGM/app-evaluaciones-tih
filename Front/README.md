@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Referencias
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Comandos importantes:
 
-## Available Scripts
+|Comando|REACT|Ubuntu|  GIT | Oracle |  Descripción |
+|---|:---:|:---:|:---:|:---:|---|
+|npx create-react-app nombreDeLaApp|x|   |   |   | Nos crea un una app desde una base ya diseñada.|
+|clip < texto.**extencion**|  | x |  x |   | Te hace un Crtl+C de algun archivo sin tener que abrir el archivo, selecionar y copiar, más fácil.   |
+|echo "Algo que quieras" > archivo.**extencion**|   | x  |  x |   | Te crea un archivo con algo que quieras poner dentro.  |
+|git config -e|||x||Te abre la configuracion de git para poder editarla. Ejemplo credentials.helper:store|
+|sudo npm cache clean -f</br>sudo npm install -g n</br>sudo n stable</br>sudo n latest||x|||Comandos para actulizar npm y nodejs|
+|git config credential.helper store||x|x||Nos guarda las credenciales en el disco para no tener que repetirlas en cada push|
+|sudo ./filebeat -e -c /etc/filebeat/filebeat.yml -d "publish"||x|||Correr filebeat como en windows:</br>Situarse en la carpeta /usr/share/filebeat/bin y ejecutar</br>Si necesitamos correr de nuevo borrar la carpeta **data**|
+|sudo -u logstash /usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/**filebeat.conf**||x|||Correr logstash como en windows pero solo un pipeline|
+|[Instalar filebeat](https://kifarunix.com/install-and-configure-filebeat-7-on-ubuntu-18-04-debian-9-8/)||x||||
+|[Instalar logstash](https://kifarunix.com/install-and-configure-logstash-7-on-ubuntu-18-debian-9-8/)||x||||
+|[Configurar grok](https://kifarunix.com/how-to-debug-logstash-grok-filters/)||x||||
+|git checkout .|||x||Borra los cambios que hayas hecho y te regresa al estado del repositorio remoto|
+|||||||
 
-In the project directory, you can run:
 
-### `npm start`
+## Links cursos:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+React desde 0 canal midudev:
+- https://www.youtube.com/watch?v=T_j60n1zgu0&feature=youtu.be
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Reactjs curso canal fazt:
+- https://www.youtube.com/watch?v=zIY87vU33aA&t=3s
 
-### `npm test`
+React redux,action,reducer,store curso 20 videos(cortos) canal gammafp
+- https://www.youtube.com/watch?v=mitOmHw5e0o 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Crear un app con React usando npx create-react-app canal midudev:
+- https://www.youtube.com/watch?v=QBLbXgeXMU8
 
-### `npm run build`
+## Conceptos y tutoriales importantes:
+|Concepto|Descipción|
+|---|---|
+|MERN|MongoDB, Express, REACT, NodeJS| 
+|GrahpQL|Digamos quien hara las consultas al servidor.|
+|Ionic4|Framework para hacer aplicaciones en movil, ya es agnostico.|
+|Agnostico|No está casdo con alguna tecnología o vendor.|
+|Vendor|Compañia que suministra, ofrece software.|
+|Babel|Paquete que nos ayuda a trasncribir JSX a JS|
+|CRUD|Create, Read, Update, Delete|
+|hooks|"Manejador de componentes"|
+|useState()|Sirve para manejar el estado de un componente, es como set y get|
+|[Host para tu pagina con Github](https://www.youtube.com/watch?v=OUsC13AEiUQ)|Tutorial para construir tu proyecto React y subirlo a GitHub.io|
+|[Sintasix de Markdown](https://www.markdownguide.org/basic-syntax)||
+|[Generador de tablas markdown](https://www.tablesgenerator.com/markdown_tables#)||
+|[Login react](https://medium.com/swlh/persisting-data-with-redux-thunk-session-storage-in-react-application-9cc94549a1c)|Curso de react para hacer un login con paginacion, store, persintencia y onSubmit|
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Paquetes cools:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+|Paquete|Función|Enlaces|
+|---|---|---|
+|react-bootstrap|bootstrap para react|[react-bootstrap](https://react-bootstrap.github.io/)|
+|react-date-picker|Te crea un compoente para escoger una fecha. Hay que cambiar locale("es-ES")|[react-date-picker](https://www.npmjs.com/package/react-date-picker)|
+|uuid|Te genera ids aleatorios del tipo string|[uuid](https://www.npmjs.com/package/uuid)|
+|mdbreact|Paquete que tiene componentes bastante cools solo que algunos componentes son de paga|[mdbreact](https://mdbootstrap.com/docs/react/getting-started/download/)|
+|react-redux|Es un puente entre react y redux|[reac-redux](https://www.npmjs.com/package/react-redux)|
+|react-router-dom|Nos permite cambiar de ruta (ejemplo: de /login a /home)|[react-router-dom](https://www.npmjs.com/package/react-router-dom)|
+|redux|De forma muy general nos permite guardar datos para usarlos después|[redux](https://www.npmjs.com/package/redux)|
 
-### `npm run eject`
+## Links para el futuro:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+How to do a social media app with react canal <h>freeCodeCamp.org</h>:
+- https://www.youtube.com/watch?v=n1mdAPFq2Os&feature=youtu.be
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Nextjs curso canal fazt:
+- https://www.youtube.com/watch?v=Tn6QYliFBcs&t=125s
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Ionic4 & angular canal fazt:</br>
+<h>Nota: Son varios videos.</h>
+- https://www.youtube.com/watch?v=MMRqyQVQ980&t=187s
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
