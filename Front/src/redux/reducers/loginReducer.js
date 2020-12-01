@@ -1,4 +1,4 @@
-import { LOGIN} from '../constan';
+import { LOGIN, LOGIN_ERROR } from '../constan';
 
 const initial_state = {
     userDetails: {
@@ -9,9 +9,11 @@ const initial_state = {
 const LoginReducer = (state = initial_state, action) => {
     switch (action.type) {
         case LOGIN:
-            return { ...state, userDetails: { ...action.payload } };
-    default:
-        return state;
+            return {...state, data:action.userData, userDetails: { ...action.userDetails}};
+        case LOGIN_ERROR:
+            return {...state, ...action.payload }
+        default:
+            return state;
     }
 }
 export default LoginReducer;

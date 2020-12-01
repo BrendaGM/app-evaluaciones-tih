@@ -9,6 +9,7 @@ import {LoginAction} from '../redux/actions/loginAction'
 
 const Login=(props)=>{
     let sps='@spsolutions.com.mx';
+    //let dispatch= useDispatch();
     const [validated, setValidated] = useState(false);
     const [validated2, setValidated2] = useState(false);
     const [user,setUser]=useState(dataUser);
@@ -19,6 +20,7 @@ const Login=(props)=>{
         let payload ={usuario: usuario, contrasena: contrasena}
         props.loginAction(payload)
         .then(response =>{
+            console.log(response);
             if(response.success){
                 props.history.push('/tih/home');
             }
