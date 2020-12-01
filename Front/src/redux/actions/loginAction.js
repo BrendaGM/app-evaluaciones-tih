@@ -13,11 +13,9 @@ const login = (payload, userData) => {
 
 export const LoginAction = (payload) => (dispatch, getState) => {
   return new Promise((resolve, reject) => {
-    axios({
-      url: "http://localhost:3000/api/usuarios?usuario=bg&contrasena=al",
-      method: "GET",
-    })
+    axios.all([axios.get(`/usuarios?usuario=${payload.usuario}&contrasena=${payload.contrasena}`)])
       .then((response) => {
+        console.log(response);
         dispatch(login(payload, response));
         resolve(login(payload, response));
       })
