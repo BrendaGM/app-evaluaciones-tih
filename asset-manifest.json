@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/app-evaluaciones-tih/static/css/main.01925599.chunk.css",
-    "main.js": "/app-evaluaciones-tih/static/js/main.631e15b3.chunk.js",
-    "main.js.map": "/app-evaluaciones-tih/static/js/main.631e15b3.chunk.js.map",
-    "runtime-main.js": "/app-evaluaciones-tih/static/js/runtime-main.6f24b184.js",
-    "runtime-main.js.map": "/app-evaluaciones-tih/static/js/runtime-main.6f24b184.js.map",
-    "static/css/2.1a02f21c.chunk.css": "/app-evaluaciones-tih/static/css/2.1a02f21c.chunk.css",
-    "static/js/2.b725425c.chunk.js": "/app-evaluaciones-tih/static/js/2.b725425c.chunk.js",
-    "static/js/2.b725425c.chunk.js.map": "/app-evaluaciones-tih/static/js/2.b725425c.chunk.js.map",
-    "static/js/3.19e60784.chunk.js": "/app-evaluaciones-tih/static/js/3.19e60784.chunk.js",
-    "static/js/3.19e60784.chunk.js.map": "/app-evaluaciones-tih/static/js/3.19e60784.chunk.js.map",
-    "index.html": "/app-evaluaciones-tih/index.html",
-    "static/css/2.1a02f21c.chunk.css.map": "/app-evaluaciones-tih/static/css/2.1a02f21c.chunk.css.map",
-    "static/css/main.01925599.chunk.css.map": "/app-evaluaciones-tih/static/css/main.01925599.chunk.css.map",
-    "static/js/2.b725425c.chunk.js.LICENSE.txt": "/app-evaluaciones-tih/static/js/2.b725425c.chunk.js.LICENSE.txt",
-    "static/media/SPS.1cae14da.jpg": "/app-evaluaciones-tih/static/media/SPS.1cae14da.jpg"
+    "main.css": "/talento-in-house-app/static/css/main.01925599.chunk.css",
+    "main.js": "/talento-in-house-app/static/js/main.cb4fc6ce.chunk.js",
+    "main.js.map": "/talento-in-house-app/static/js/main.cb4fc6ce.chunk.js.map",
+    "runtime-main.js": "/talento-in-house-app/static/js/runtime-main.f47af275.js",
+    "runtime-main.js.map": "/talento-in-house-app/static/js/runtime-main.f47af275.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/talento-in-house-app/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.b725425c.chunk.js": "/talento-in-house-app/static/js/2.b725425c.chunk.js",
+    "static/js/2.b725425c.chunk.js.map": "/talento-in-house-app/static/js/2.b725425c.chunk.js.map",
+    "static/js/3.19e60784.chunk.js": "/talento-in-house-app/static/js/3.19e60784.chunk.js",
+    "static/js/3.19e60784.chunk.js.map": "/talento-in-house-app/static/js/3.19e60784.chunk.js.map",
+    "index.html": "/talento-in-house-app/index.html",
+    "static/css/2.1a02f21c.chunk.css.map": "/talento-in-house-app/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.01925599.chunk.css.map": "/talento-in-house-app/static/css/main.01925599.chunk.css.map",
+    "static/js/2.b725425c.chunk.js.LICENSE.txt": "/talento-in-house-app/static/js/2.b725425c.chunk.js.LICENSE.txt",
+    "static/media/SPS.1cae14da.jpg": "/talento-in-house-app/static/media/SPS.1cae14da.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6f24b184.js",
+    "static/js/runtime-main.f47af275.js",
     "static/css/2.1a02f21c.chunk.css",
     "static/js/2.b725425c.chunk.js",
     "static/css/main.01925599.chunk.css",
-    "static/js/main.631e15b3.chunk.js"
+    "static/js/main.cb4fc6ce.chunk.js"
   ]
 }
