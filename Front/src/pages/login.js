@@ -9,7 +9,6 @@ import {LoginAction} from '../redux/actions/loginAction'
 
 const Login=(props)=>{
     let sps='@spsolutions.com.mx';
-    //let dispatch= useDispatch();
     const [validated, setValidated] = useState(false);
     const [validated2, setValidated2] = useState(false);
     const [user,setUser]=useState(dataUser);
@@ -22,10 +21,25 @@ const Login=(props)=>{
         .then(response =>{
             console.log(response);
             if(response.success){
-                props.history.push('/tih/home');
+                props.history.push('/home');
             }
         })
     }
+
+    //const data = api.badges.list();
+/*
+    const response =  fetch(
+        "http://localhost:18081/api/usuarios?usuario=bg&contrasena=da", {
+            method: "GET",
+            redirect: "follow",
+            mode: "no-cors",
+            headers: {
+              "Content-Type": "application/json",
+            }
+        }
+    );
+    
+    console.log("RESPONSE: " + response);*/
 
     const handleChange=(e)=>{
         setUser({
@@ -57,15 +71,11 @@ const Login=(props)=>{
         }else{
             event.preventDefault();
             handleClose();
-            //alert('listo');
         }
     
         setValidated2(true);
       };
-    /*const handleClick=(event)=>{
-        event.preventDefault();
-        user.usuario.length && user.contrasena.length && login(user.usuario,user.contrasena);
-    }*/
+
     return (
         <div className="login">
             <Image src={Logo} alt="SPS" className="spsLogo"/>
@@ -115,7 +125,6 @@ const Login=(props)=>{
 }
 
 const mapStateToProps=(state)=>{
-    //console.log('state',state);
     return{
         userDetails: state.login.userDetails,
     }
