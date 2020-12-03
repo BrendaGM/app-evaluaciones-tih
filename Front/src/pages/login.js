@@ -6,6 +6,7 @@ import {Form, Button,Image,InputGroup,Modal} from 'react-bootstrap';
 import {connect} from 'react-redux'
 import dataUser from '../Database/user.json'
 import {LoginAction} from '../redux/actions/loginAction'
+import api from '../api';
 
 const Login=(props)=>{
     let sps='@spsolutions.com.mx';
