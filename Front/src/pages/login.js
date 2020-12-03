@@ -27,21 +27,6 @@ const Login=(props)=>{
         })
     }
 
-    //const data = api.badges.list();
-/*
-    const response =  fetch(
-        "http://localhost:18081/api/usuarios?usuario=bg&contrasena=da", {
-            method: "GET",
-            redirect: "follow",
-            mode: "no-cors",
-            headers: {
-              "Content-Type": "application/json",
-            }
-        }
-    );
-    
-    console.log("RESPONSE: " + response);*/
-
     const handleChange=(e)=>{
         setUser({
                 ...user,

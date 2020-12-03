@@ -24,6 +24,10 @@ export const LoginAction = (payload) => (dispatch, getState) => {
         "Content-Type": "application/json;charset=UTF-8",
         "Access-Control-Allow-Origin": "*",
       },
+      auth: {
+        username: 'mnx-mule',
+        password: 'mnx-mule'
+      },
     })
       .then((response) => {
         console.log(response);
