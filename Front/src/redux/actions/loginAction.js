@@ -14,10 +14,15 @@ const login = (payload, userData) => {
 export const LoginAction = (payload) => (dispatch, getState) => {
   return new Promise((resolve, reject) => {
     axios({
+<<<<<<< Updated upstream
       //url: `https://anypoint.mulesoft.com/mocking/api/v1/sources/exchange/assets/d4788f6c-c024-43ee-8253-b139c8997e9e/m/usuarios?usuario=${payload.usuario}&contrasena=${payload.contrasena}`,
       url: "http://api-enriquecimiento.us-e2.cloudhub.io/api/gestionPagos/enriquecimiento/v2/contratos?claveEntidad=MONEX&idContrato=123455",
       method: "GET",
       mode: "no-cors",
+=======
+      url: "http://localhost:18081/api/usuarios?usuario=bg&contrasena=al",
+      method: "GET",
+>>>>>>> Stashed changes
       headers: {
         "X-Requested-With": "XMLHttpRequest",
         "Content-Type": "application/json;charset=UTF-8",
