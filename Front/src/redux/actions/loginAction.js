@@ -37,7 +37,8 @@ export const LoginAction = (payload) => (dispatch, getState) => {
       .catch((error) => {
         dispatch({ type: LOGIN_ERROR, payload: "No se encontro el usuario." });
         resolve({ error });
-        alert(error.response.data.mensaje);
+        //alert(error.response.data.mensaje);
+        alert("Error al consumir el servicio.");
       });
   });
 };
