@@ -6,7 +6,6 @@ import {Form, Button,Image,InputGroup,Modal} from 'react-bootstrap';
 import {connect} from 'react-redux'
 import dataUser from '../Database/user.json'
 import {LoginAction} from '../redux/actions/loginAction'
-import api from '../api';
 
 const Login=(props)=>{
     let sps='@spsolutions.com.mx';
@@ -64,7 +63,7 @@ const Login=(props)=>{
 
     return (
         <div className="login">
-            <Image src={Logo} alt="SPS" className="spsLogo"/>
+            <Image src={Logo} alt="SPS" className="spsLogos"/>
             <p className="opacos">Proporciona tus credenciales para iniciar sesión en la App de Evaluaciones</p>
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Form.Group md="6" controlId="validationCustom03">

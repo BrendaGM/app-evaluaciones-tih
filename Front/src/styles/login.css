@@ -1,7 +1,6 @@
 .login{
-    width: 100%;
-    max-width: 320px;
-    min-height: 600px;
+    width: 350px !important;
+    height: 100vh !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,9 +10,9 @@
     color: gray;
     text-align: center;
 }
-.spsLogo{
+.spsLogos{
     width: 80%;
-    height: 80%;
+    height: 50%;
 }
 
 .botonCentral{
