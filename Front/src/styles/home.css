@@ -1,0 +1,155 @@
+header{
+    position: fixed;
+    top: 1px;
+    left: 1px;
+    flex-direction: column;
+}
+.home{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.central{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.negro{
+    color: black;
+}
+
+.sinDecoracion{
+    list-style-type: none;
+}
+
+.miNav{
+    flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    position: fixed;
+    /*left: 50px;*/
+    font-size: 16;
+    color: grey;
+    border-right: 1px solid lightgray;
+    height: 100vh;
+    width: 300px;
+}
+
+.miPruebaNav{
+    flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    /*left: 50px;*/
+    font-size: 16;
+    color: grey;
+    border-right: 1px solid lightgray;
+    width: 300px;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+}
+
+.divNav{
+    height: 100%;
+    width: 350px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-basis: 350px;
+    overflow-y: auto;
+}
+
+.pestana, .pestanaCentrada, .navPrueba ul, li{
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    color: gray;
+}
+
+.pestana:hover{
+    color:dodgerblue;
+} 
+
+.pestanaCentrada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.spsLogo{
+    width: 55%;
+    height: 95%;
+}
+
+.navPrueba{
+    width: 300px !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    border: none;
+    color: grey;
+    border-radius: 0%;
+    padding: 0px;
+    border-bottom: 1px solid lightgray;    
+}
+.navPrueba label{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0%;
+    display: flex;
+    margin: 0px;
+    padding: 20px;
+    flex-direction: row;
+    justify-content:  space-between;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+/*.navPrueba label svg{
+    float: right;
+}*/
+
+
+.miPruebaNav ul{
+    position: relative;
+    list-style: none;
+    display: none;
+}
+.miPruebaNav ul,li{
+    list-style: none;
+}
+.miPruebaNav .navPrueba:hover{
+    color:dodgerblue;
+}
+
+.miPruebaNav ul li:hover{
+    color: dodgerblue;
+    cursor: pointer;
+}
+input{
+    display: none;
+}
+
+[id^=btn]:checked + ul{
+    display: block;
+}
+
+ul{
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+@media screen and(max-width: 900px){
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}

@@ -33,6 +33,9 @@ React redux,action,reducer,store curso 20 videos(cortos) canal gammafp
 Crear un app con React usando npx create-react-app canal midudev:
 - https://www.youtube.com/watch?v=QBLbXgeXMU8
 
+Cosas de Css-flex canal Codigo del futuro
+- https://www.youtube.com/watch?v=iz50F9EJQAA
+
 ## Conceptos y tutoriales importantes:
 |Concepto|Descipción|
 |---|---|
