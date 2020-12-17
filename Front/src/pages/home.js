@@ -1,27 +1,95 @@
 import '../styles/home.css'
+import '../index.css'
 import React from 'react'
 import {connect} from 'react-redux'
-import ElementoNav from '../components/elementoNav'
-import SPS from '../images/SPS.jpg'
+/*import ElementoNav from '../components/elementoNav'
+import SPS from '../images/SPS.jpg'*/
+import Navbar from '../components/navbar'
 import TALENTO from '../images/talento.png'
-import {Nav, Image/*, InputGroup, FormControl*/} from 'react-bootstrap'
+//import {menu} from '../Database/menu.json'
+import {FaHome,FaAngleDown,FaAngleRight} from 'react-icons/fa'
+import {Image/*, InputGroup, FormControl*/} from 'react-bootstrap'
 const Home=(props)=>{
+    let menu=[
+            {
+                "encabezado":"Inicio",
+                "subItems":[
+                    {
+                        "nombre":"uno",
+                        "icon":<FaHome/>
+                    },
+                    {
+                        "nombre":"dos",
+                        "icon":<FaHome/>
+                    },
+                    {
+                        "nombre":"tres",
+                        "icon":""
+                    }
+                ],
+                "icon":<FaAngleRight/>
+            },
+            {
+                "encabezado":"Inicio2",
+                "subItems":[
+                    {
+                        "nombre":"uno",
+                        "icon":<FaHome/>
+                    },
+                    {
+                        "nombre":"dos",
+                        "icon":<FaHome/>
+                    },
+                    {
+                        "nombre":"tres",
+                        "icon":""
+                    }
+                ],
+                "icon":<FaAngleRight/>
+            },
+            {
+                "encabezado":"Inicio3",
+                "subItems":[
+                    {
+                        "nombre":"uno",
+                        "icon":<FaHome/>
+                    },
+                    {
+                        "nombre":"dos",
+                        "icon":<FaHome/>
+                    },
+                    {
+                        "nombre":"tres",
+                        "icon":""
+                    }
+                ],
+                "icon":""
+            },
+            {
+                "encabezado":"Inicio4",
+                "subItems":[
+                    {
+                        "nombre":"uno",
+                        "icon":<FaHome/>
+                    },
+                    {
+                        "nombre":"dos",
+                        "icon":<FaHome/>
+                    },
+                    {
+                        "nombre":"tres",
+                        "icon":""
+                    }
+                ],
+                "icon":""
+            }
+        ];
     let talento=`¡Hola ${props.userDetails.usuario}!`
     console.log(talento);
     talento= talento.split("\n").join("");
     return(
-        <div className="home">
-            <div className='divNav'>
-                <Nav className='miPruebaNav' defaultActiveKey='/home' >
-                    <ElementoNav banderaImagen={true} image={SPS} className={'spsLogo'}/>
-                    <ElementoNav lis={['Coach', 'Talento','Otra cosa','dos','tres','cuatro','cinco','seis','Otra cosa','dos','tres','cuatro','cinco','seis']} id={'1'} titulo='Inicio'/>
-                    <ElementoNav lis={['Coach', 'Talento','Otra cosa','dos','tres','cuatro','cinco','seis','Otra cosa','dos','tres','cuatro','cinco','seis']} id={'2'} titulo='Inicio2'/>
-                    <ElementoNav lis={['Coach', 'Talento','Otra cosa','dos','tres','cuatro','cinco','seis','Otra cosa','dos','tres','cuatro','cinco','seis']} id={'3'} titulo='Inicio3'/>
-                    <ElementoNav lis={['Coach', 'Talento','Otra cosa','dos','tres','cuatro','cinco','seis','Otra cosa','dos','tres','cuatro','cinco','seis']} id={'4'} titulo='Inicio4'/>
-                    <ElementoNav lis={['Coach', 'Talento','Otra cosa','dos','tres','cuatro','cinco','seis','Otra cosa','dos','tres','cuatro','cinco','seis']} id={'5'} titulo='Inicio5'/>
-                    <ElementoNav lis={['Coach', 'Talento','Otra cosa','dos','tres','cuatro','cinco','seis','Otra cosa','dos','tres','cuatro','cinco','seis']} id={'6'} titulo='Inicio6'/>
-                </Nav>
-            </div>
+        <div id="homes">
+            <Navbar menu={menu}/>
             <div className='central'>
                 <h1>{talento}</h1>
                 <Image src={TALENTO} alt={'Talent in House'} rounded fluid/>
