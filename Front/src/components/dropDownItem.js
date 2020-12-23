@@ -1,9 +1,9 @@
 export default function DropDownItem(props){
     return(
-        <a href='#' className='menus-item'>
-            <span className='text-button'>{props.lefticon}</span>
+        <a href='#' className='text-button'>
+            <i>{props.ln}</i>
             {props.children}
-            <span className='text-button'>{props.righticon}</span>
+            <i>{props.rn}</i>
         </a>
     );
 }

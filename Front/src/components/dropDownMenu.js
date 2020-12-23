@@ -1,15 +1,12 @@
-import DropdownItem from "react-bootstrap/esm/DropdownItem";
+import DropDownItem from "./dropDownItem";
 
 export default function DropDownMenu(props){
     return(
         <div className='dropdown'>
-            <DropdownItem>My profile</DropdownItem>
-            <DropdownItem 
-                lefticon={props.icon}
-                righticon={props.icon}
-                > 
+            <DropDownItem>My profile</DropDownItem>
+            <DropDownItem ln={props.icon} rn={props.icon}> 
             Settings
-            </DropdownItem>
+            </DropDownItem>
         </div>
     );
 }

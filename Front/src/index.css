@@ -52,7 +52,7 @@ a{
 
 .navbar{
   height: 100% !important;
-  width: 350px;
+  width:350px;
   max-width: 350px !important;
   display: flex;
   flex-direction: column !important;
@@ -62,7 +62,6 @@ a{
   background-color: var(--bg);
   padding: 0 1rem;
   border-bottom: var(--border);
-  overflow-y: auto;
 }
 a{
   text-decoration: none;
@@ -97,10 +96,6 @@ ul p:hover{
   cursor: pointer;
   color: dodgerblue !important;
 }
-.nav-item a:hover{
-  cursor: pointer;
-  color: dodgerblue;
-}
 .nav-item{
   width: 100%;
   display: flex;
@@ -108,7 +103,11 @@ ul p:hover{
   justify-content: center;
   padding: 20px;
   background-color: white;
-  transition: filter 300ms;
+}
+
+.nav-item a:hover{
+  cursor: pointer;
+  color: dodgerblue;
 }
 
 .nav-item-image{
@@ -118,7 +117,6 @@ ul p:hover{
   align-items: center;
   justify-content: center;
   padding: 20px;
-  transition: filter 300ms;
 }
 
 .text-button{
@@ -130,7 +128,14 @@ ul p:hover{
     align-items: center;
     justify-content: flex-start;
     text-decoration: none !important;
-    text-emphasis: none;
+    transition: background var(--speed);
+}
+
+.text-button:hover{
+  background-color: lightgray;
+}
+.text-button a{
+  text-decoration: none !important;
 }
 
 .text-button-image{
@@ -146,20 +151,23 @@ ul p:hover{
     text-emphasis: none;
 }
 
-.nav-item:hover{
-  filter: brightness(95%);
-  /*background-color:lightgray;*/
-}
 
 .dropdown{
-  position: absolute;
-  top: 58px;
+  position: absolute !important;
+  /*left: 550px;*/
   width: 300px;
-  transform: translateX(-45%);
+  transform: translateX(102%);
   background-color: var(--bg);
   border: var(--border);
   border-radius: var(--border-radius);
   padding: 1rem;
+  border-bottom: var(--border);
+
+  /*display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-wrap: wrap;*/
   overflow: hidden;
 }
 
@@ -167,6 +175,8 @@ ul p:hover{
   height: 50px;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  justify-content: flex-start;
   border-radius: var(--border-radius);
   transition: background var(--speed);
   padding: 0.5rem;

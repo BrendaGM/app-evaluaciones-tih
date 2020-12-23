@@ -4,7 +4,7 @@ import SPS from '../images/SPS.jpg'
 import DropDownMenu from './dropDownMenu'
 export default function Navbar(props){
     return(
-        <div className='navbar'>
+        <nav className='navbar'>
             <ul className='navbar-nav'>
                 <li className='nav-item-image'>
                     <a href='#' className='text-button-image'>
@@ -13,10 +13,10 @@ export default function Navbar(props){
                 </li>
                 {props.menu.map(e=>(
                     <NavItem encabezado={e.encabezado} icon={e.icon} key={e.encabezado}>
-                        <DropDownMenu icon={e.icon}/>
+                        <DropDownMenu icon={e.icon}></DropDownMenu>
                     </NavItem>
                 ))}
             </ul>
-        </div>
+        </nav>
     );
 }
