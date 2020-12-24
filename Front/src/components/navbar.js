@@ -2,7 +2,10 @@ import NavItem from "./navItem";
 import {Image} from 'react-bootstrap'
 import SPS from '../images/SPS.jpg'
 import DropDownMenu from './dropDownMenu'
+import {useState} from 'react'
+import DropDownMenuOptions from "./dropDownMenuOptions";
 export default function Navbar(props){
+    const [activeMenu, setActiveMenu] = useState('main');
     return(
         <nav className='navbar'>
             <ul className='navbar-nav'>
@@ -13,7 +16,25 @@ export default function Navbar(props){
                 </li>
                 {props.menu.map(e=>(
                     <NavItem encabezado={e.encabezado} icon={e.icon} key={e.encabezado}>
-                        <DropDownMenu icon={e.icon}></DropDownMenu>
+                        {e.subItems && (
+                            <div className='dropdown'>
+                                <DropDownMenu 
+                                    subItems={e.subItems} 
+                                    activeMenu={activeMenu}
+                                    nameMenu={'main'}
+                                    setActiveMenu={setActiveMenu}
+                                />
+                                {e.subItems.map(sI=>(
+                                   <DropDownMenuOptions 
+                                    subMenu={sI.subMenu} 
+                                    activeMenu={activeMenu}
+                                    nameMenu={sI.nombre}
+                                    key={sI.nombre}
+                                    setActiveMenu={setActiveMenu}
+                                    /> 
+                                ))}
+                            </div>
+                        )}
                     </NavItem>
                 ))}
             </ul>

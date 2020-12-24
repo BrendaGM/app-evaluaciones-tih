@@ -7,7 +7,7 @@ import SPS from '../images/SPS.jpg'*/
 import Navbar from '../components/navbar'
 import TALENTO from '../images/talento.png'
 //import {menu} from '../Database/menu.json'
-import {FaHome,/*FaAngleDown,*/FaAngleRight} from 'react-icons/fa'
+import {FaHome,/*FaAngleDown,*/FaAngleRight, FaAngleLeft} from 'react-icons/fa'
 import {Image/*, InputGroup, FormControl*/} from 'react-bootstrap'
 const Home=(props)=>{
     let menu=[
@@ -15,16 +15,22 @@ const Home=(props)=>{
                 "encabezado":"Inicio",
                 "subItems":[
                     {
-                        "nombre":"uno",
-                        "icon":<FaHome/>
+                        "nombre":"My profile",
+                        "leftIcon":<FaHome/>,
+                        "rightIcon":<FaAngleRight/>,
+                        "subMenu":["Option1","Option2"]
                     },
                     {
-                        "nombre":"dos",
-                        "icon":<FaHome/>
+                        "nombre":"Settings",
+                        "leftIcon":<FaHome/>,
+                        "rightIcon":<FaAngleRight/>,
+                        "subMenu":["Option1","Option2"]
                     },
                     {
-                        "nombre":"tres",
-                        "icon":""
+                        "nombre":"friends",
+                        "leftIcon":<FaHome/>,
+                        "rightIcon":<FaAngleRight/>,
+                        "subMenu":""
                     }
                 ],
                 "icon":<FaAngleRight/>
@@ -34,15 +40,21 @@ const Home=(props)=>{
                 "subItems":[
                     {
                         "nombre":"uno",
-                        "icon":<FaHome/>
+                        "leftIcon":<FaHome/>,
+                        "rightIcon":<FaAngleRight/>,
+                        "subMenu":["Option1","Option2"]
                     },
                     {
                         "nombre":"dos",
-                        "icon":<FaHome/>
+                        "leftIcon":<FaHome/>,
+                        "rightIcon":<FaAngleRight/>,
+                        "subMenu":""
                     },
                     {
                         "nombre":"tres",
-                        "icon":""
+                        "leftIcon":<FaHome/>,
+                        "rightIcon":<FaAngleRight/>,
+                        "subMenu":""
                     }
                 ],
                 "icon":<FaAngleRight/>
@@ -52,35 +64,28 @@ const Home=(props)=>{
                 "subItems":[
                     {
                         "nombre":"uno",
-                        "icon":<FaHome/>
+                        "leftIcon":<FaHome/>,
+                        "rightIcon":<FaAngleRight/>,
+                        "subMenu":""
                     },
                     {
                         "nombre":"dos",
-                        "icon":<FaHome/>
+                        "leftIcon":<FaHome/>,
+                        "rightIcon":<FaAngleRight/>,
+                        "subMenu":""
                     },
                     {
                         "nombre":"tres",
-                        "icon":""
+                        "leftIcon":"",
+                        "rightIcon":"",
+                        "subMenu":""
                     }
                 ],
                 "icon":""
             },
             {
                 "encabezado":"Inicio4",
-                "subItems":[
-                    {
-                        "nombre":"uno",
-                        "icon":<FaHome/>
-                    },
-                    {
-                        "nombre":"dos",
-                        "icon":<FaHome/>
-                    },
-                    {
-                        "nombre":"tres",
-                        "icon":""
-                    }
-                ],
+                "subItems":"",
                 "icon":""
             }
         ];
