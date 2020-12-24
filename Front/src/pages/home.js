@@ -18,13 +18,13 @@ const Home=(props)=>{
                         "nombre":"My profile",
                         "leftIcon":<FaHome/>,
                         "rightIcon":<FaAngleRight/>,
-                        "subMenu":["Option1","Option2"]
+                        "subMenu":["My1","My2","My3","My4","My5"]
                     },
                     {
                         "nombre":"Settings",
                         "leftIcon":<FaHome/>,
                         "rightIcon":<FaAngleRight/>,
-                        "subMenu":["Option1","Option2"]
+                        "subMenu":["S1","S2"]
                     },
                     {
                         "nombre":"friends",

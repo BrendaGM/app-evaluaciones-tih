@@ -15,7 +15,7 @@ export default function Navbar(props){
                     </a>
                 </li>
                 {props.menu.map(e=>(
-                    <NavItem encabezado={e.encabezado} icon={e.icon} key={e.encabezado}>
+                    <NavItem encabezado={e.encabezado} icon={e.icon} setActiveMenu={setActiveMenu} key={e.encabezado}>
                         {e.subItems && (
                             <div className='dropdown'>
                                 <DropDownMenu 
@@ -25,13 +25,16 @@ export default function Navbar(props){
                                     setActiveMenu={setActiveMenu}
                                 />
                                 {e.subItems.map(sI=>(
-                                   <DropDownMenuOptions 
-                                    subMenu={sI.subMenu} 
-                                    activeMenu={activeMenu}
-                                    nameMenu={sI.nombre}
-                                    key={sI.nombre}
-                                    setActiveMenu={setActiveMenu}
-                                    /> 
+                                    sI.subMenu && (
+                                        <DropDownMenuOptions 
+                                         subMenu={sI.subMenu} 
+                                         activeMenu={activeMenu}
+                                         nameMenu={sI.nombre}
+                                         goToMenu={'main'}
+                                         key={sI.nombre}
+                                         setActiveMenu={setActiveMenu}
+                                         /> 
+                                    )
                                 ))}
                             </div>
                         )}

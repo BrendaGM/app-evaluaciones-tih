@@ -188,6 +188,7 @@ ul p:hover{
 
 .menu{
   width: 100%;
+  height: 100%;
 }
 
 .menu-primary-enter{
@@ -219,7 +220,7 @@ ul p:hover{
 }
 
 .menu-secondary-exit{
-  position: absolute;
+  position: static;
 }
 
 .menu-secondaryry-exit-active{

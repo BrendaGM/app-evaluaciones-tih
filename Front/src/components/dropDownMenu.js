@@ -10,7 +10,11 @@ export default function DropDownMenu(props){
                 >   
                 <div className='menu'>
                     {props.subItems.map(e=>(
-                        <DropDownItem leftIcon={e.leftIcon} rightIcon={e.rightIcon} goToMenu={e.nombre} setActiveMenu={props.setActiveMenu} key={e.nombre}>{e.nombre}</DropDownItem>
+                        e.subMenu ? (
+                            <DropDownItem leftIcon={e.leftIcon} rightIcon={e.rightIcon} goToMenu={e.nombre} setActiveMenu={props.setActiveMenu} key={e.nombre}>{e.nombre}</DropDownItem>
+                        ):(
+                            <DropDownItem leftIcon={e.leftIcon} rightIcon={e.rightIcon} goToMenu={''} setActiveMenu={props.setActiveMenu} key={e.nombre}>{e.nombre}</DropDownItem>
+                        )
                     ))}
                 </div>
             </CSSTransition>
