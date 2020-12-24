@@ -7,6 +7,7 @@ export default function DropDownMenu(props){
                 unmountOnExit
                 timeout={500}
                 classNames={'menu-primary'}
+                onEnter={props.onEnter}
                 >   
                 <div className='menu'>
                     {props.subItems.map(e=>(

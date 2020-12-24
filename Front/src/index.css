@@ -156,6 +156,7 @@ ul p:hover{
   position: absolute !important;
   /*left: 550px;*/
   width: 300px;
+  min-height: 100px;
   transform: translateX(102%);
   background-color: var(--bg);
   border: var(--border);
@@ -169,6 +170,7 @@ ul p:hover{
   justify-content: flex-end;
   flex-wrap: wrap;*/
   overflow: hidden;
+  transition: height var(--speed) ease;
 }
 
 .menus-item{
@@ -187,8 +189,7 @@ ul p:hover{
 }
 
 .menu{
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
 }
 
 .menu-primary-enter{
@@ -197,33 +198,38 @@ ul p:hover{
 }
 
 .menu-primary-enter-active{
+  position: absolute;
   transform: translateX(0%);
   transition: all var(--speed) ease;
 }
 
 .menu-primary-exit{
-  position: absolute;
+  position: relative;
 }
 
 .menu-primary-exit-active{
+  position: absolute;
   transform: translateX(-110%);
   transition: all var(--speed) ease;
 }
 
 .menu-secondary-enter{
+  position: absolute;
   transform: translateX(110%);
 }
 
 .menu-secondary-enter-active{
+  position: absolute;
   transform: translateX(0%);
   transition: all var(--speed) ease;
 }
 
 .menu-secondary-exit{
-  position: static;
+  position: absolute;
 }
 
-.menu-secondaryry-exit-active{
+.menu-secondary-exit-active{
+  position: absolute;
   transform: translateX(110%);
   transition: all var(--speed) ease;
 }

@@ -7,7 +7,7 @@ import SPS from '../images/SPS.jpg'*/
 import Navbar from '../components/navbar'
 import TALENTO from '../images/talento.png'
 //import {menu} from '../Database/menu.json'
-import {FaHome,/*FaAngleDown,*/FaAngleRight, FaAngleLeft} from 'react-icons/fa'
+import {FaHome,/*FaAngleDown,*/FaAngleRight} from 'react-icons/fa'
 import {Image/*, InputGroup, FormControl*/} from 'react-bootstrap'
 const Home=(props)=>{
     let menu=[
