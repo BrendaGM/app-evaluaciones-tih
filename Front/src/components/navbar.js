@@ -21,7 +21,7 @@ export default function Navbar(props){
                     </a>
                 </li>
                 {props.menu.map(e=>(
-                    <NavItem encabezado={e.encabezado} icon={e.icon} setActiveMenu={setActiveMenu} key={e.encabezado} onEnter={calcHeight}>
+                    <NavItem encabezado={e.encabezado} icon={e.icon} hreff={e.hreff} setActiveMenu={setActiveMenu} key={e.encabezado} onEnter={calcHeight}>
                         {e.subItems && (
                             <div className='dropdown' style={{height:menuHeight}}>
                                 <DropDownMenu 

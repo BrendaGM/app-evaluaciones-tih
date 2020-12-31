@@ -52,6 +52,7 @@ Cosas de Css-flex canal Codigo del futuro
 |[Sintasix de Markdown](https://www.markdownguide.org/basic-syntax)||
 |[Generador de tablas markdown](https://www.tablesgenerator.com/markdown_tables#)||
 |[Login react](https://medium.com/swlh/persisting-data-with-redux-thunk-session-storage-in-react-application-9cc94549a1c)|Curso de react para hacer un login con paginacion, store, persintencia y onSubmit|
+|[Animación DropDownMenu](https://www.youtube.com/watch?v=IF6k0uZuypA)|Curso para realizar una animación de izquierda a derecha de los menus|
 
 
 ## Paquetes cools:
@@ -65,6 +66,7 @@ Cosas de Css-flex canal Codigo del futuro
 |react-redux|Es un puente entre react y redux|[reac-redux](https://www.npmjs.com/package/react-redux)|
 |react-router-dom|Nos permite cambiar de ruta (ejemplo: de /login a /home)|[react-router-dom](https://www.npmjs.com/package/react-router-dom)|
 |redux|De forma muy general nos permite guardar datos para usarlos después|[redux](https://www.npmjs.com/package/redux)|
+|react-icons|Puedes usar iconos sin necesidad de manejarlos como imagen|[react-icons](https://www.npmjs.com/package/react-icons)|
 
 ## Links para el futuro:
 

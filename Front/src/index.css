@@ -130,6 +130,42 @@ ul p:hover{
     text-decoration: none !important;
     transition: background var(--speed);
 }
+.text-button-label{
+  --button-size: calc(var(-nav-size)*0.5);
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none !important;
+}
+.text-button-icon{
+  --button-size: calc(var(-nav-size)*0.5);
+    padding: 5px;
+    width: 30px;
+    /*border-radius: 50%;*/
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none !important;
+    /*transition: background var(--speed);*/
+}
+
+.text-button-rig{
+  --button-size: calc(var(-nav-size)*0.5);
+    padding: 5px;
+    width: 100%;
+    /*border-radius: 50%;*/
+    margin: 2px;
+    display: flex;
+    flex-direction: row-reverse !important;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none !important;
+    /*transition: background var(--speed);*/
+}
 
 .text-button:hover{
   background-color: lightgray;
@@ -137,10 +173,19 @@ ul p:hover{
 .text-button a{
   text-decoration: none !important;
 }
+.text-button-icon:hover{
+  color: dodgerblue;
+  /*background-color: lightgray;*/
+}
+.text-button-rig:hover{
+  background-color: lightgray;
+  color:dodgerblue;
+}
+
 
 .text-button-image{
   --button-size: calc(var(-nav-size)*0.5);
-    width: 100%;
+    width: height;
     padding: 5px;
     margin: 2px;
     display: flex;
