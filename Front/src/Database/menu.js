@@ -2,32 +2,54 @@ import {FaHome,/*FaAngleDown,*/FaAngleRight} from 'react-icons/fa'
 export const menu=[
     {
         "encabezado":"Inicio",
+        "contenido":"",
         "subItems":[
             {
                 "nombre":"My profile",
                 "leftIcon":"",
                 "rightIcon":<FaAngleRight/>,
                 "hreff":"#",
+                "contenido":"",
                 "subMenu":[
                     {
                         "nombre":"My1",
-                        "hreff":"/page"
+                        "hreff":"#",
+                        "contenido":
+                        <>
+                            <h1>My1</h1>
+                        </>
                     },
                     {
                         "nombre":"My2",
-                        "hreff":"/page"
+                        "hreff":"#",
+                        "contenido":
+                        <>
+                            <h1>My2</h1>
+                        </>
                     },
                     {
                         "nombre":"My3",
-                        "hreff":"/page"
+                        "hreff":"#",
+                        "contenido":
+                        <>
+                            <h1>My3</h1>
+                        </>
                     },
                     {
                         "nombre":"My4",
-                        "hreff":"/page"
+                        "hreff":"#",
+                        "contenido":
+                        <>
+                            <h1>My4</h1>
+                        </>
                     },
                     {
                         "nombre":"My5",
-                        "hreff":"/page"
+                        "hreff":"#",
+                        "contenido":
+                        <>
+                            <h1>My5</h1>
+                        </>
                     }]
             },
             {
@@ -35,13 +57,35 @@ export const menu=[
                 "leftIcon":"",
                 "rightIcon":<FaAngleRight/>,
                 "hreff":"#",
-                "subMenu":[{"nombre":"S1","hreff":"/page"},{"nombre":"S2","hreff":"/page"}]
+                "contenido":"",
+                "subMenu":[
+                    {
+                        "nombre":"S1",
+                        "hreff":"#",
+                        "contenido":
+                        <>
+                            <h1>S1</h1>
+                        </>
+                    },
+                    {
+                        "nombre":"S2",
+                        "hreff":"#",
+                        "contenido":
+                        <>
+                            <h1>S2</h1>
+                        </>
+                    }
+                ]
             },
             {
                 "nombre":"Friends",
                 "leftIcon":"",
                 "rightIcon":<FaHome/>,
-                "hreff":"/page",
+                "hreff":"#",
+                "contenido":
+                    <>
+                        <h1>Friends</h1>
+                    </>,
                 "subMenu":""
             }
         ],
@@ -50,26 +94,53 @@ export const menu=[
     },
     {
         "encabezado":"Inicio2",
+        "contenido":"",
         "subItems":[
             {
                 "nombre":"uno",
                 "leftIcon":"",
                 "rightIcon":<FaAngleRight/>,
                 "hreff":"#",
-                "subMenu":[{"nombre":"Option1","hreff":"/page"},{"nombre":"Option2","hreff":"/page"}]
+                "contenido":"",
+                "subMenu":[
+                    {
+                        "nombre":"Option1",
+                        "hreff":"#",
+                        "contenido":
+                        <>
+                            <h1>Option1</h1>
+                        </>
+                    },
+                    {
+                        "nombre":"Option2",
+                        "hreff":"#",
+                        "contenido":
+                        <>
+                            <h1>Option2</h1>
+                        </>
+                    }
+                ]
             },
             {
                 "nombre":"dos",
                 "leftIcon":"",
                 "rightIcon":<FaAngleRight/>,
-                "hreff":"/page",
+                "hreff":"#",
+                "contenido":
+                <>
+                    <h1>dos</h1>
+                </>,
                 "subMenu":""
             },
             {
                 "nombre":"tres",
                 "leftIcon":"",
                 "rightIcon":<FaAngleRight/>,
-                "hreff":"/page",
+                "hreff":"#",
+                "contenido":
+                <>
+                    <h1>tres</h1>
+                </>,
                 "subMenu":""
             }
         ],
@@ -78,26 +149,39 @@ export const menu=[
     },
     {
         "encabezado":"Inicio3",
+        "contenido":"",
         "subItems":[
             {
                 "nombre":"uno",
                 "leftIcon":"",
                 "rightIcon":<FaAngleRight/>,
-                "hreff":"/page",
+                "hreff":"#",
+                "contenido":
+                <>
+                    <h1>Uno</h1>
+                </>,
                 "subMenu":""
             },
             {
                 "nombre":"dos",
                 "leftIcon":"",
                 "rightIcon":<FaAngleRight/>,
-                "hreff":"/page",
+                "hreff":"#",
+                "contenido":
+                <>
+                    <h1>Dos</h1>
+                </>,
                 "subMenu":""
             },
             {
                 "nombre":"tres",
                 "leftIcon":"",
                 "rightIcon":"",
-                "hreff":"/page",
+                "hreff":"#",
+                "contenido":
+                <>
+                    <h1>Tres</h1>
+                </>,
                 "subMenu":""
             }
         ],
@@ -106,8 +190,12 @@ export const menu=[
     },
     {
         "encabezado":"Inicio4",
+        "contenido": 
+            <>
+                <h1>Inicio4</h1>
+            </>,
         "subItems":"",
         "icon":"",
-        "hreff":"/page"
+        "hreff":"#"
     }
 ];

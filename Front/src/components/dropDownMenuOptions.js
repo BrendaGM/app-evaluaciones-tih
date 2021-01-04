@@ -13,7 +13,16 @@ export default function DropDownMenuOptions(props){
                 <div className='menu'>
                     {props.subMenu && (
                         props.subMenu.map(e=>(
-                            <DropDownItemOption leftIcon={<FaAngleLeft/>} setActiveMenu={props.setActiveMenu} goToMenu={'main'} hreff={e.hreff} key={e.nombre}>{e.nombre}</DropDownItemOption>
+                            <DropDownItemOption 
+                                leftIcon={<FaAngleLeft/>} 
+                                setActiveMenu={props.setActiveMenu} 
+                                goToMenu={'main'} 
+                                hreff={e.hreff}
+                                contenido={e.contenido}
+                                setContenido={props.setContenido} 
+                                key={e.nombre}
+                            >{e.nombre}
+                            </DropDownItemOption>
                         ))
                     )}
                 </div>

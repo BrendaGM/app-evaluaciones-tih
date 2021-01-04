@@ -8,17 +8,26 @@ import Navbar from '../components/navbar'
 import TALENTO from '../images/talento.png'
 import {menu} from '../Database/menu.js'
 import {Image/*, InputGroup, FormControl*/} from 'react-bootstrap'
+import { useState } from 'react'
+//import ContenidoCentral from '../components/contenidoCentral'
 const Home=(props)=>{
     let talento=`¡Hola ${props.userDetails.usuario}!`
     talento= talento.split("\n").join("");
+    const [contenido,setContenido]=useState(
+        <>
+            <h1>{talento}</h1>
+            <Image src={TALENTO} alt={'Talent in House'} rounded fluid/>
+        </>
+    );
     return(
         <div id="homes">
-            <Navbar menu={menu}/>
+            <Navbar menu={menu} setContenido={setContenido}/>
             <div className='central'>
-                <h1>{talento}</h1>
-                <Image src={TALENTO} alt={'Talent in House'} rounded fluid/>
+                <div className='central'>
+                    {contenido}
+                </div>
             </div>
-        </div>
+        </div> 
     );
 }
 

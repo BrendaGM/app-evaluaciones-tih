@@ -16,12 +16,20 @@ export default function Navbar(props){
         <nav className='navbar'>
             <ul className='navbar-nav'>
                 <li className='nav-item-image'>
-                    <a href='https://www.spsolutions.com.mx/' target='_blank' className='text-button-image'>
+                    <a href='https://www.spsolutions.com.mx/' target='_blank'  rel='noreferrer' className='text-button-image'>
                         <Image src={SPS} className='spsLogo'/>
                     </a>
                 </li>
                 {props.menu.map(e=>(
-                    <NavItem encabezado={e.encabezado} icon={e.icon} hreff={e.hreff} setActiveMenu={setActiveMenu} key={e.encabezado} onEnter={calcHeight}>
+                    <NavItem 
+                    encabezado={e.encabezado} 
+                    icon={e.icon} 
+                    hreff={e.hreff} 
+                    setActiveMenu={setActiveMenu} 
+                    key={e.encabezado} 
+                    onEnter={calcHeight} 
+                    setContenido={props.setContenido}
+                    contenido={e.contenido}>
                         {e.subItems && (
                             <div className='dropdown' style={{height:menuHeight}}>
                                 <DropDownMenu 
@@ -30,6 +38,7 @@ export default function Navbar(props){
                                     nameMenu={'main'}
                                     setActiveMenu={setActiveMenu}
                                     onEnter={calcHeight}
+                                    setContenido={props.setContenido}
                                 />
                                 {e.subItems.map(sI=>(
                                     sI.subMenu && (
@@ -41,6 +50,7 @@ export default function Navbar(props){
                                          key={sI.nombre}
                                          setActiveMenu={setActiveMenu}
                                          onEnter={calcHeight}
+                                         setContenido={props.setContenido}
                                          /> 
                                     )
                                 ))}

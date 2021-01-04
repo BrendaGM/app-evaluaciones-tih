@@ -8,7 +8,10 @@ export default function NavItem(props){
             <a href={props.hreff} className='text-button' onClick={(el)=> {
                 setOpen(!open)
                 props.setActiveMenu('main');
-                props.onEnter(el);
+                if(props.contenido){
+                    props.setContenido(props.contenido);
+                }
+                /*props.onEnter(el);*/
                 }}>
                 {props.encabezado}
                 <i>{props.icon}</i>

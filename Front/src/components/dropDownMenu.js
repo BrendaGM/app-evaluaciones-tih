@@ -12,9 +12,30 @@ export default function DropDownMenu(props){
                 <div className='menu'>
                     {props.subItems.map(e=>(
                         e.subMenu ? (
-                            <DropDownItem leftIcon={e.leftIcon} rightIcon={e.rightIcon} goToMenu={e.nombre} setActiveMenu={props.setActiveMenu} hreff={e.hreff} key={e.nombre}>{e.nombre}</DropDownItem>
+                            <DropDownItem 
+                                leftIcon={e.leftIcon} 
+                                rightIcon={e.rightIcon} 
+                                goToMenu={e.nombre} 
+                                setActiveMenu={props.setActiveMenu} 
+                                hreff={e.hreff} 
+                                key={e.nombre}
+                                contenido={e.contenido}
+                                setContenido={props.setContenido}
+                            >
+                            {e.nombre}
+                            </DropDownItem>
                         ):(
-                            <DropDownItem leftIcon={e.leftIcon} rightIcon={e.rightIcon} goToMenu={''} setActiveMenu={props.setActiveMenu} hreff={e.hreff} key={e.nombre}>{e.nombre}</DropDownItem>
+                            <DropDownItem 
+                                leftIcon={e.leftIcon} 
+                                rightIcon={e.rightIcon} 
+                                goToMenu={''} 
+                                setActiveMenu={props.setActiveMenu} 
+                                hreff={e.hreff} 
+                                key={e.nombre}
+                                contenido={e.contenido}
+                                setContenido={props.setContenido}
+                            >{e.nombre}
+                            </DropDownItem>
                         )
                     ))}
                 </div>
