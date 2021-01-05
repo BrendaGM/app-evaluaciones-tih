@@ -52,6 +52,7 @@ Cosas de Css-flex canal Codigo del futuro
 |[Sintasix de Markdown](https://www.markdownguide.org/basic-syntax)||
 |[Generador de tablas markdown](https://www.tablesgenerator.com/markdown_tables#)||
 |[Login react](https://medium.com/swlh/persisting-data-with-redux-thunk-session-storage-in-react-application-9cc94549a1c)|Curso de react para hacer un login con paginacion, store, persintencia y onSubmit|
+|[localStorage y sessionStorage](https://javascript.info/localstorage#:~:text=LocalStorage%2C%20sessionStorage%201%20Unlike%20cookies%2C%20web%20storage%20objects,objects%2C%20they%20can%E2%80%99t%20access%20data%20from%20each%20other.)|Como funciona la persistencia de datos en los buscadores, muy enlazado al medium de arriba|
 |[Animación DropDownMenu](https://www.youtube.com/watch?v=IF6k0uZuypA)|Curso para realizar una animación de izquierda a derecha de los menus|
 
 
@@ -67,6 +68,7 @@ Cosas de Css-flex canal Codigo del futuro
 |react-router-dom|Nos permite cambiar de ruta (ejemplo: de /login a /home)|[react-router-dom](https://www.npmjs.com/package/react-router-dom)|
 |redux|De forma muy general nos permite guardar datos para usarlos después|[redux](https://www.npmjs.com/package/redux)|
 |react-icons|Puedes usar iconos sin necesidad de manejarlos como imagen|[react-icons](https://www.npmjs.com/package/react-icons)|
+|react-simple-tree-menu|Un menu el cual funciona como acordion, facilicimo de usar, muy bueno|[react-simple-tree-menu](https://www.npmjs.com/package/react-simple-tree-menu)|
 
 ## Links para el futuro:
 
