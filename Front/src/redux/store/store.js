@@ -4,14 +4,15 @@ import LoginReducer from '../reducers/loginReducer';
 
 const ConfigureStore = () => {
     var initialState = {};
+    //console.log(sessionStorage)
     try {
-        initialState = sessionStorage.getItem("master_class") ? JSON.parse(sessionStorage.getItem("master_class")) : {};
+        initialState = sessionStorage.getItem("app-evaluaciones-tih") ? JSON.parse(sessionStorage.getItem("app-evaluaciones-tih")) : {};
     } catch (error) {
         console.log('getError', error)
     }
     const saver = (store) => next => action => {
         let stateToSave = store.getState();
-        sessionStorage.setItem("master_class", JSON.stringify({ ...stateToSave }))
+        sessionStorage.setItem("app-evaluaciones-tih", JSON.stringify({ ...stateToSave }))
         return next(action);
     }
         const rootReducer = combineReducers({

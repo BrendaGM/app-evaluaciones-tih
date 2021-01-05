@@ -1,10 +1,19 @@
+//Styles
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/login.css'
+
+//Dependencies
 import {useState} from 'react'
-import Logo from '../images/SPS.jpg'
-import {Form, Button,Image,InputGroup,Modal} from 'react-bootstrap';
 import {connect} from 'react-redux'
+import {Form, Button,Image,InputGroup,Modal} from 'react-bootstrap';
+
+//Images
+import Logo from '../images/SPS.jpg'
+
+//Data
 import dataUser from '../Database/user.json'
+
+//Components
 import {LoginAction} from '../redux/actions/loginAction'
 
 const Login=(props)=>{
@@ -21,6 +30,12 @@ const Login=(props)=>{
         .then(response =>{
             //console.log(response);
             if(response.success){
+                if(JSON.parse(sessionStorage.getItem('app-evaluaciones-tih'))){
+                    let aux=JSON.parse(sessionStorage.getItem('app-evaluaciones-tih'))
+                    aux.login.userDetails=payload
+                    sessionStorage.setItem('app-evaluaciones-tih',JSON.stringify(aux));
+                    //console.log(JSON.parse(sessionStorage.getItem("app-evaluaciones-tih")))
+                }
                 props.history.push('/home');
             }
         })
@@ -113,6 +128,7 @@ const Login=(props)=>{
 }
 
 const mapStateToProps=(state)=>{
+    //console.log('Satate on login', state)
     return{
         userDetails: state.login.userDetails,
     }
