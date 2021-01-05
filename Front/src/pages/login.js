@@ -19,7 +19,7 @@ const Login=(props)=>{
         let payload ={usuario: usuario, contrasena: contrasena}
         props.loginAction(payload)
         .then(response =>{
-            console.log(response);
+            //console.log(response);
             if(response.success){
                 props.history.push('/home');
             }
@@ -40,7 +40,10 @@ const Login=(props)=>{
           event.preventDefault();
           event.stopPropagation();
         }else{
-            let aux=user.usuario+sps
+            let aux=''
+            if(user.usuario.indexOf(sps)===-1){
+                aux=user.usuario+sps
+            }
             setUser(u=>{return {...user,usuario:aux}})
             user.usuario.length && user.contrasena.length && login(aux,user.contrasena);
             event.preventDefault();

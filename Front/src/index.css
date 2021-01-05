@@ -14,10 +14,10 @@ code {
 
 .App{
   width: 100vw !important;
-  height: 100vh !important;
+  height: 100% !important;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -30,26 +30,9 @@ code {
   flex-wrap: wrap;
 }
 
-:root{
-  --bg: white;
-  --bg-accent: lightgray;
-  --text-color: grey;
-  --border: 1px solid lightgray;
-  --border-radius: 0px;
-  --speed: 500ms;
-}
+/*
 
-ul{
-  list-style: none;
-  margin: 0;
-  padding:20px;
-}
-
-a{
-  color: var(--text-color);
-  text-decoration: none;
-}
-
+INtento con animación
 .navbar{
   height: 100% !important;
   width:350px;
@@ -74,7 +57,7 @@ a{
   border-right: var(--border);
   padding: 0px;
   padding-left: 20px;
-  /*padding-right: 200px;*/
+  //padding-right: 200px;
 }
 .navbar .navbar-nav p{
   margin: 0px;
@@ -145,13 +128,13 @@ ul p:hover{
     padding: 5px;
     width: 30px;
     height: 40px;
-    /*border-radius: 50%;*/
+    //border-radius: 50%;
     margin: 2px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     text-decoration: none !important;
-    /*transition: background var(--speed);*/
+    //transition: background var(--speed);
 }
 
 .text-button-rig{
@@ -159,14 +142,14 @@ ul p:hover{
     padding: 5px;
     width: 100%;
     height: 40px;
-    /*border-radius: 50%;*/
+    //border-radius: 50%;
     margin: 2px;
     display: flex;
     flex-direction: row-reverse !important;
     align-items: center;
     justify-content: center;
     text-decoration: none !important;
-    /*transition: background var(--speed);*/
+    //transition: background var(--speed);
 }
 
 .text-button:hover{
@@ -177,7 +160,7 @@ ul p:hover{
 }
 .text-button-icon:hover{
   color: dodgerblue;
-  /*background-color: lightgray;*/
+  //background-color: lightgray;
 }
 .text-button-rig:hover{
   background-color: lightgray;
@@ -201,7 +184,7 @@ ul p:hover{
 
 .dropdown{
   position: absolute !important;
-  /*left: 550px;*/
+  //left: 550px;
   width: 300px;
   min-height: 100px;
   transform: translateX(102%);
@@ -211,11 +194,11 @@ ul p:hover{
   padding: 1rem;
   border-bottom: var(--border);
 
-  /*display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-end;
-  flex-wrap: wrap;*/
+  //display: flex;
+  //flex-direction: row;
+  //align-items: flex-end;
+  //justify-content: flex-end;
+  //flex-wrap: wrap;
   overflow: hidden;
   transition: height var(--speed) ease;
 }
@@ -281,3 +264,5 @@ ul p:hover{
   transform: translateX(110%);
   transition: all var(--speed) ease;
 }
+
+*/
