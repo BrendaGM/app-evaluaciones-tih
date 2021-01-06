@@ -23,6 +23,7 @@
     "redux": "^4.0.5",
     "redux-react-session": "^2.6.1",
     "redux-thunk": "^2.3.0",
+    "rxjs": "^6.6.3",
     "web-vitals": "^0.2.4",
     "wouter": "^2.6.0"
   },
