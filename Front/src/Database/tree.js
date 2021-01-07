@@ -27,6 +27,7 @@ export const tree = [
     {
         key: 'Cerrar Sesion',
         label: 'Cerrar Sesión',
-        url:'/page'
+        url:'/page',
+        central:'logout'
     }
   ];

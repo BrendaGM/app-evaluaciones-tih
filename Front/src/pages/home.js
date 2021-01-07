@@ -18,11 +18,15 @@ import {tree} from '../Database/tree'
 
 //Components
 import CentralUno from '../components/centralUno';
+import {authenticationService} from '../functions/service'
 
 
 const Home=(props)=>{
     let talento=`¡Hola ${props.userDetails.usuario}!`
     talento= talento.split("\n").join("");
+    function toPush(path){
+        props.history.push(path);
+    }
     const [contenido,setContenido]=useState(
         <>
             <h1>{talento}</h1>
@@ -47,6 +51,11 @@ const Home=(props)=>{
                                     case 'centralUno':
                                         setContenido(<CentralUno nombre={label}/>)
                                         break;
+                                    case 'logout':
+                                        authenticationService.logout();
+                                        //console.log('home storage', JSON.parse(sessionStorage.getItem('app-evaluaciones-tih')))
+                                        toPush('/');
+                                        break;
                                     default:
                                         setContenido(
                                             <>
@@ -67,6 +76,8 @@ const Home=(props)=>{
     );
     
 }
+
+
 
 const mapStateToProps =(state)=>{
     console.log('state', state);

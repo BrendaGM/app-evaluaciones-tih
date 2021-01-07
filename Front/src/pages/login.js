@@ -15,6 +15,7 @@ import dataUser from '../Database/user.json'
 
 //Components
 import {LoginAction} from '../redux/actions/loginAction'
+import {authenticationService} from '../functions/service'
 
 const Login=(props)=>{
     let sps='@spsolutions.com.mx';
@@ -28,15 +29,13 @@ const Login=(props)=>{
         let payload ={usuario: usuario, contrasena: contrasena}
         props.loginAction(payload)
         .then(response =>{
-            //console.log(response);
+            console.log('response',response);
             if(response.success){
                 if(JSON.parse(sessionStorage.getItem('app-evaluaciones-tih'))){
-                    let aux=JSON.parse(sessionStorage.getItem('app-evaluaciones-tih'))
-                    aux.login.userDetails=payload
-                    sessionStorage.setItem('app-evaluaciones-tih',JSON.stringify(aux));
+                    props.history.push(authenticationService.login(response.userDetails,props.location.state));
                     //console.log(JSON.parse(sessionStorage.getItem("app-evaluaciones-tih")))
                 }
-                props.history.push('/home');
+                //props.history.push('/home');
             }
         })
     }

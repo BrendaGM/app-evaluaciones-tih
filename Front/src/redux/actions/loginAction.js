@@ -1,6 +1,7 @@
 import { LOGIN } from "../constan";
 import { LOGIN_ERROR } from "../constan";
 import axios from "axios";
+import consulta from "../../functions/simuladorConsulta";
 
 const login = (payload, userData) => {
   return {
@@ -32,6 +33,7 @@ export const LoginAction = (payload) => (dispatch, getState) => {
     })
       .then((response) => {
         console.log(response);
+        consulta(payload);
         dispatch(login(payload, response));
         resolve(login(payload, response));
       })

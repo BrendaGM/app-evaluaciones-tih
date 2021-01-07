@@ -1,11 +1,10 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
-import { BehaviorSubject } from 'rxjs';
-
+import {authenticationService} from '../functions/service'
 export const PrivateRoute = ({ component: Component, roles, ...rest }) => (
     <Route {...rest} render={props => {
-        const currentUserSubject = new BehaviorSubject(JSON.parse(sessionStorage.getItem('app-evaluaciones-tih')));
-        let currentUser=currentUserSubject.value;
+        console.log('service',authenticationService);
+        const currentUser=authenticationService.currentUserValue;
         /*if(JSON.parse(sessionStorage.getItem('app-evaluaciones-tih'))){
             currentUser = JSON.parse(sessionStorage.getItem('app-evaluaciones-tih')).login.userDetails;
         }*/
