@@ -33,9 +33,15 @@ export const LoginAction = (payload) => (dispatch, getState) => {
     })
       .then((response) => {
         console.log(response);
-        consulta(payload);
-        dispatch(login(payload, response));
-        resolve(login(payload, response));
+        const cons=consulta(payload);
+        if(cons){
+          //console.log('sip mande')
+          dispatch(login(cons, response));
+          resolve(login(cons, response));
+        }else{
+          dispatch(login(payload, response));
+          resolve(login(payload, response));
+        }
       })
       .catch((error) => {
         dispatch({ type: LOGIN_ERROR, payload: "No se encontro el usuario." });

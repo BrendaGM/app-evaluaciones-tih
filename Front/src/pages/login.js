@@ -29,7 +29,7 @@ const Login=(props)=>{
         let payload ={usuario: usuario, contrasena: contrasena}
         props.loginAction(payload)
         .then(response =>{
-            console.log('response',response);
+            //console.log('response',response);
             if(response.success){
                 if(JSON.parse(sessionStorage.getItem('app-evaluaciones-tih'))){
                     props.history.push(authenticationService.login(response.userDetails,props.location.state));

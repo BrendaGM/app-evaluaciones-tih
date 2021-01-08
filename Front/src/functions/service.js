@@ -35,7 +35,7 @@ function login(userDetails,location){
         //console.log('login storage', JSON.parse(sessionStorage.getItem('app-evaluaciones-tih')))
         //authenticationService.login(aux)
         currentUserSubject.next(aux)
-        const { from } = location || { from: { pathname: "/home" } };
+        const { from } = location || { from: { pathname: page(userDetails.rol)} };
         return from;
         //console.log(JSON.parse(sessionStorage.getItem("app-evaluaciones-tih")))
     }
@@ -49,3 +49,13 @@ function logout() {
 /*function init(){
     return new BehaviorSubject(JSON.parse(sessionStorage.getItem('app-evaluaciones-tih')));
 }*/
+function page(rol){
+    switch(rol){
+        case 'coach':
+            return '/coach';
+        case 'admin':
+            return '/admin'
+        default:
+            return '/home'
+    }
+}

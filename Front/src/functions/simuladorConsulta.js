@@ -6,6 +6,10 @@ const consulta= (payload)=>{
     let rol=users.filter(u=>{
         return (u.contraseña===userDetails.contrasena && u.usuario===userDetails.usuario);
     })
-    return rol;
+    if(rol.length){
+        return rol[0];
+    }else{
+        return null;
+    }
 }
 export default consulta;

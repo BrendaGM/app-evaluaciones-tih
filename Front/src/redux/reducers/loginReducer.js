@@ -3,7 +3,8 @@ import { LOGIN, LOGIN_ERROR } from '../constan';
 const initial_state = {
     userDetails: {
         usuario:"",
-        contrasena:""
+        contrasena:"",
+        rol:""
     }
 }
 const LoginReducer = (state = initial_state, action) => {
